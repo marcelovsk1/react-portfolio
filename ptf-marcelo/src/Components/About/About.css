@@ -108,11 +108,16 @@ p {
 }
 @media screen and (max-width: 600px) {
 
-  .styles_container {
+  .container-wrapper {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    justify-content: center;
+  }
+
+  .styles_container {
+    max-width: 800px;
     height: 600px;
+    padding: 10 100px;
+    margin-top: 10vh;
     justify-content: center;
   }
 
@@ -120,10 +125,7 @@ p {
     display: flex;
     flex-direction: row;
     font-size: 35px;
-  }
-
-  .pic_container {
-    display: none;
+    justify-content: center;
   }
 
   .About-Pic {
@@ -131,15 +133,24 @@ p {
   }
 
   .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding-right: 90rem;
   }
 
-  .description h3,
-.description p {
-  margin: 0; /* Remover margens padrão */
-  padding-right: 90rem;
-}
+  .description h3 {
+    font-size: 24px;
+  }
+
+  .description p {
+    margin-bottom: 20px; /* Espaçamento entre o parágrafo e a imagem */
+  }
+
+  .le_wagon {
+    width: 100px; /* Ajuste conforme necessário */
+  }
+
 
 
   .ios {
