@@ -18,7 +18,7 @@ import adidasoriginals from "../../img/adidas.png";
 import scraper from "../../img/scraper.png"
 import portfolio from "../../img/portfolio.png"
 // Games
-import box from "../../img/box.png"
+import boxrumble from "../../img/box.png"
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState("first");
@@ -93,7 +93,7 @@ const Projects = () => {
     {
       title: "Box Rumble",
       description: "My first game project in Unity, just for fun",
-      imgUrl: box,
+      imgUrl: boxrumble,
       link: "https://github.com/marcelovsk1/BoxRumble"
     }
   ];
@@ -113,6 +113,7 @@ const Projects = () => {
   };
 
   return (
+  <div className='container'>
     <section className="project" id="projects">
       <Container>
         <Row>
@@ -130,7 +131,7 @@ const Projects = () => {
                         <Nav.Link eventKey="second" as="button" className="button i-button">Full Stack</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third" as="button" className="button i-button">Games</Nav.Link>
+                        <Nav.Link eventKey="third" as="button" className="button i-button">Games Projects</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content>
@@ -153,6 +154,7 @@ const Projects = () => {
         </Row>
       </Container>
     </section>
+  </div>
   );
 }
 
